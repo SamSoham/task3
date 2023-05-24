@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.call{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 11px;
+}
+.call img{
+    width: 18px;
+    height: 18px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: white;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: center;
+    background-color: #3c5977;
+}
+.hero{
+    background-image: url('hero.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    padding: 50px 80px;
+}
+.logo img{
+    height: 110px;
+    width: auto;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo button{
+    background-color: #3782cf;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+}
+.checkout{
+    background-color: #3782cf;
+    border: none;
+    padding: 15px 24px;
+    font-size: 22px;
+    color: white;
+    border-radius: 25px;
+}
+.main p{
+    color: #3c5977;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 8px;
+}
+.main h4{
+    font-size: 40px;
+    max-width: 600px;
+    margin-top: 15px;
+    line-height: 55px;
+}
+.main{
+    margin-bottom: 40px;
+}
+.content{
+    position: relative;
+    top: 7rem;
+    left: 4rem;
+}
+/*About Us*/
+.about{
+    padding: 60px 50px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.details img{
+    height: 450px;
+    width: 550px;
+}
+.info{
+    max-width: 600px;
+}
+.info h4{
+    font-size: 40px;
+    color: #3c5977;
+    margin-bottom: 8px;
+}
+.info p{
+    font-size: 20px;
+    line-height: 28px;
+    word-spacing: 4px;
+}
+.work{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 12px;
+    padding: 12px 80px;
+   color: white;
+}
+.sol{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #3c5977;
+   padding: 35px;  
+   border-radius: 30px; 
+   color: white;
+}
+.sol h3{
+    font-size: 28px;
+}
+.sol p{
+    font-size: 18px;
+}
+.sol li{
+    font-size: 20px;
+    list-style: none;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.mine{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    background-color: #3c5977;
+    padding: 35px; 
+    border-radius: 30px;
+    color: white;
+}
+.mine h3{
+    font-size: 28px;
+}
+.mine p{
+    font-size: 18px; 
+}
+.mine h4{
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+.guideline{
+    display: flex;
+    flex-direction: column;
+    gap: 22px; 
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 50px;
+    background-image: url('Get\ Started\ Banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 40px;
+    width: 70vw;
+    margin: 15px auto;
+}
+
+.left h3{
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+.left p{
+    font-size: 20px;
+}
+.banner button{
+    background-color: #3782cf;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+}
+.facts{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 77vw;
+    margin: 0 auto;
+    padding: 15px 35px;
+}
+.facts span{
+    font-weight: 700;
+}
+.projects{
+    font-size: 18px;
+    width: 75vw;
+    margin: 40px auto;
+}
+.projects span{
+    font-weight: 700;
+}
+.projects h2{
+    font-size: 40px;
+    color: #3c5977;
+    margin-bottom: 35px ;
+}
+.side{
+    font-size: 20px;
+    background-color: #3c5977;
+    color: white;
+    max-width: 350px;
+    padding: 40px;
+    border-radius: 30px;
+    position: relative;
+}
+.side span{
+    font-size: 30px;
+    font-weight: 500;
+}
+.talk{
+    position: relative;
+    left: 9rem; 
+    max-width: 70vw;
+    margin-top: 80px;
+    height: 60vh;
+}
+.right{
+    background-color: #e1eaf1;
+    font-size: 18px;
+    line-height: 30px;
+   max-width: 700px;
+   padding: 35px;
+   border-radius: 30px;
+   position: absolute;
+   top: 0px;
+   left: 350px;
+}
+.survey h2{
+    font-size: 40px;
+    color: #3c5977;
+    margin: 50px auto;
+}
+.survey{
+    max-width: 80vw;
+    margin: 70px auto;
+}
+.provision{
+    display: flex;
+    justify-content: space-between;
+}
+.data{
+    font-size: 18px;
+    width: 300px;
+    background-color: #e1eaf1;
+    padding: 30px;
+    border-radius: 30px;
+    line-height: 30px;
+    
+}
+.data h2{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.mcdr{
+    background-color: #e1eaf1;
+    padding: 30px;
+}
+.sop{
+    max-width: 80vw;
+    margin: 40px auto;
+    padding: 40px 80px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.sop img{
+   max-height: 300px;
+   width: auto;
+}
+.sop h2{
+    font-size: 36px;
+    color: #3c5977;
+}
+.sop span{
+    font-weight: 700;
+}
+.text{
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.model{
+    display: flex;
+    gap: 45px;
+    font-size: 20px;
+    width: 500px;
+}
+.model img{
+  height: 80px;
+  width: auto;
+}
+.model span{
+    font-weight: 700;
+}
+.area{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+} 
+.option{
+    display: flex;
+    max-width: 80vw;
+    justify-content: center;
+    margin: 25px auto;
+}
+.output h2{
+    font-size: 30px;   
+    margin: 40px 20px;
+}
+.output{
+    max-width: 70vw;
+    margin: 0 auto;
+}
+.service{
+    padding: 40px 80px;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+.service h3{
+    font-size: 40px;
+    color: #3c5977;
+    margin: 40px;
+}
+.serv img{
+    height: 80px;
+    width: auto;
+}
+.serv p{
+    font-size: 18px;
+}
+.serv{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    width: 370px;
+}
+.mode{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+}
+.deliverables{
+    max-width: 80vw;
+    margin: 40px auto;
+}
+.det img{
+    height: 300px;
+    width: auto;
+    margin-bottom: 15px;
+}
+.docs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;  
+    row-gap: 15px;
+}
+.deliverables h2{
+    font-size: 40px;
+    color: #3c5977;
+    margin: 30px 0px;
+}
+.footer button{
+    background-color: #3782cf;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+.footer{
+    padding: 30px 120px;
+    background-image: url('Get\ Started\ Banner\ 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+@media screen and (max-width: 1300px) {
+    .main h4{
+         font-size: 30px;
+    }
+    .main p{
+        font-size: 18px;
+    }
+    .docs{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .checkout{
+        font-size: 16px;
+    }
+    .details img{
+        height: 380px;
+        width: 450px;
+    }
+    .info{
+        max-width: 40vw;
+    }
+    .info h4{
+        font-size: 30px;
+    }
+    .info p{
+        font-size: 16px;
+    }
+    .sol{
+        max-width: 30vw;
+    }
+    .sol h3{
+        font-size: 22px;
+    }
+    .sol p{
+    font-size: 14px;
+}
+.sol li{
+    font-size: 16px;
+}
+.mine{
+        max-width: 30vw;
+    }
+     .mine h3{
+        font-size: 22px;
+    }
+    .mine p{
+    font-size: 14px;
+}.mine h4{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.banner{
+    max-width: 70vw;
+}
+.facts{
+  max-width: 70vw;
+}
+}
