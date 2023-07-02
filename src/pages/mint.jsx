@@ -1,28 +1,10 @@
 import { Box, Stack, Typography, TextField, Button } from "@mui/material";
 import { useState, useRef, useEffect } from "react";
-import tokenList from '../components/tokenList.json'
-import { activeChainId } from '../components/chainConfig.ts'
-import Navbar from "../components/Navbar";
+import tokenList from '../Components/tokenList.json'
+import { activeChainId } from '../Components/chainConfig.ts'
+import Navbar from '../Components/Navbar'
 
 export default function Mint() {
-//   const { data: signer } = useSigner();
-//   const getInstance = async () => {
-//     try {
-//       let instance = new ethers.Contract(
-//         nftContractAddress,
-//         nftContractABI,
-//         signer
-//       );
-//       return instance;
-//     } catch (error) {
-//       console.log("No instance get");
-//     }
-//   };
-
-//   const [tokenOne, setTokenOne] = useState(
-//     tokenList[activeChainId.toString()][0]
-//   );
-//   const { address } = useAccount();
 
   const [isOpen, setIsOpen] = useState(false);
   const [changeToken, setChangeToken] = useState(1);
@@ -45,52 +27,13 @@ export default function Mint() {
     const reader = new FileReader();
     setImage(file);
   };
-//   function modifyToken(i) {
-//     setTokenOne(tokenList[activeChainId.toString()][i]);
-//     setIsOpen(false);
-//   }
-
-//   const toastId = useRef(null);
-//   const mintYourNft = async () => {
-//     setLoader(true);
-//     if (!name && !description && !link && !supply && !image) {
-//       alert("Please fill all the fields");
-//       setLoader(false);
-//       return;
-//     }
-//     toastId.current = toast("⏳ NFT is Uploading", {
-//       theme: "dark",
-//       autoClose: 5000,
-//       closeButton: true
-//     });
-//     let metadataURI = await mintNFT(name, description, link, supply, image);
-//     toast.update(toastId.current, {
-//       render:"🦄 NFT is Minting",
-//       type: toast.TYPE.INFO,
-//       theme: "dark",
-//       autoClose: 5000,
-//       closeButton: true
-//     });
-//     if (metadataURI) {
-//       let instance = await getInstance();
-//       let tx = await instance.mintNFT(address, metadataURI);
-//     }
-//     setLoader(false);
-//     toast.update(toastId.current, {
-//       render:"👏 NFT is Minted",
-//       type: toast.TYPE.SUCCESS,
-//       theme: "dark",
-//       autoClose: 5000,
-//       closeButton: true
-//     });
-//   };
 
   
   return (
   <>
+  <Box  className="mint" sx={{padding:"0px 24px"}} >
   <Navbar/>
-    <Box
-    className="mint"
+  <Box
       sx={{
         display: "flex",
         justifyContent: "center",
@@ -284,6 +227,9 @@ export default function Mint() {
         </Button>
       </Stack>
     </Box>
+  </Box>
+
+   
   </>
   );
 }

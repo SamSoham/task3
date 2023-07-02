@@ -7,6 +7,7 @@ export const ChainId = {
   };
   
   export let activeChainId = ChainId.ARBITRUM_ONE_MAINNET;
+  
   export const supportedChains = [
     ChainId.GOERLI,
     ChainId.POLYGON_MAINNET,

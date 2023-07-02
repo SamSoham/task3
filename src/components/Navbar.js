@@ -11,41 +11,39 @@ export default function Navbar(){
    <AppBar elevation={0}  sx={{
     position:"relative",
     top:"0",left:"0",
-        padding:"10px 30px",
-        flexDirection:"row",justifyContent:"space-between",
-        background:"rgb(17,17,17)",
-        boxShadow:"0px 3px 7px black",
-        
+        padding:"10px 0",
+        flexDirection:"row",justifyContent:"space-between",   
+        background:"none" 
    }}>
     <Stack direction="row" alignItems="center" gap="10px">
-    <img src="cyclone.png" alt="logo" width={100} />
+      <a href="/"><img src="cyclone.png" alt="logo" width={140} /></a>
     </Stack>
     <Box sx={{display:{xs:"none",md:"flex"},flexDirection:"row",gap:"30px",alignItems:"center"}}>
        <Typography variant="nav" >
-          <a href="#">COMMUNITY</a>
+          <a href="#">Community</a>
        </Typography>
        <Typography variant="nav" >
-          <a href="#">GITHUB</a>
+          <a href="#">Github</a>
        </Typography>
        <Typography variant="nav" >
-          <a href="#">DOCS</a>
+          <a href="#">Docs</a>
        </Typography>
        <Typography variant="nav" >
-          <a href="#">DAO</a>
+          <a href="#">Dao</a>
        </Typography>
        <Typography variant="nav" >
-          <a href="#">STATS</a>
+          <a href="#">Stats</a>
        </Typography>
        <Typography variant="nav" >
-          <a href="#">FORUM</a>
+          <a href="#">Forum</a>
        </Typography>
         <Button style={{
             padding:"10px",
             color:"white",
             border:"2px solid white",
-            fontFamily: "DM Mono"
+            fontSize:"16px"
         }}>
-          <a href="#">ENTER MINT</a>
+          <a href="/mint">ENTER MINT</a>
         </Button>
     </Box>
     <IconButton sx={{ display: { md: "none" } }}>
@@ -77,32 +75,32 @@ export default function Navbar(){
           <List>
             <ListItem>
             <Typography variant="nav" >
-          <a href="#" onClick={()=>setOpen(false)} >COMMUNITY</a>
+          <a href="#" onClick={()=>setOpen(false)} >Community</a>
        </Typography>
             </ListItem>
             <ListItem>
             <Typography variant="nav" >
-          <a href="#" onClick={()=>setOpen(false)} >GITHUB</a>
+          <a href="#" onClick={()=>setOpen(false)} >Github</a>
        </Typography>
             </ListItem>
             <ListItem>
             <Typography variant="nav" >
-          <a href="#" onClick={()=>setOpen(false)} >DOCS</a>
+          <a href="#" onClick={()=>setOpen(false)} >Docs</a>
        </Typography>
             </ListItem>
             <ListItem>
             <Typography variant="nav" >
-          <a href="#" onClick={()=>setOpen(false)} >DAO</a>
+          <a href="#" onClick={()=>setOpen(false)} >Dao</a>
        </Typography>
             </ListItem>
             <ListItem>
             <Typography variant="nav" >
-          <a href="#" onClick={()=>setOpen(false)} >STATS</a>
+          <a href="#" onClick={()=>setOpen(false)} >Stats</a>
        </Typography>
             </ListItem>
             <ListItem>
             <Typography variant="nav" >
-          <a href="#" onClick={()=>setOpen(false)} >FORUM</a>
+          <a href="#" onClick={()=>setOpen(false)} >Forum</a>
        </Typography>
             </ListItem>
            <ListItem>
@@ -110,8 +108,9 @@ export default function Navbar(){
             padding:"10px 16px",
             color:"white",
             border:"2px solid white",
+            fontSize:"16px"
         }}>
-          <a href="#">ENTER MINT</a>
+          <a href="/mint">ENTER MINT</a>
         </Button>
            </ListItem>
           </List>

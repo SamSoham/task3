@@ -20,7 +20,7 @@ export const Theme = createTheme({
     },
     fontFamily:"'Poppins',sans-serif",
     nav:{
-      fontSize: "1rem",
+      fontSize: "20px",
       fontWeight: "400",
      
     }
